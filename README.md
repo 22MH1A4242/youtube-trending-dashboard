@@ -1,4 +1,4 @@
-
+<img width="1839" height="963" alt="youtue dashboard preview " src="https://github.com/user-attachments/assets/5af9ca47-ba43-44c3-a6f2-4982b7b38082" />
 # YouTube Trending ETL Dashboard
 
 ## Project Overview
@@ -51,3 +51,9 @@ youtube_etl/
 5. **Open Power BI Dashboard:**  
 - Connect to MySQL database to refresh visuals.  
 - Explore charts and use slicers for filtering.
+
+
+
+<img width="1839" height="963" alt="youtue dashboard preview " src="https://github.com/user-attachments/assets/260c78f8-0924-4649-813e-f604b3a1733c" />
+<img width="1920" height="1020" alt="Screenshot 2025-12-26 162702" src="https://github.com/user-attachments/assets/4452eeba-5f85-4019-807d-8496a6a7cb80" />
+<img width="1920" height="1020" alt="Screenshot 2025-12-26 162650" src="https://github.com/user-attachments/assets/50dd32dd-a50e-479f-b4ba-16e3d81bbe64" />
