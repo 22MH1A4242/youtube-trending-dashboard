@@ -1,57 +1,87 @@
-<img width="1839" height="963" alt="youtue dashboard preview " src="https://github.com/user-attachments/assets/5af9ca47-ba43-44c3-a6f2-4982b7b38082" />
-# YouTube Trending ETL Dashboard
+# 📊 YouTube Trending Data ETL & Dashboard
 
-## Project Overview
-This project extracts trending video data from **YouTube Data API v3**, transforms it, loads it into a **MySQL database**, and visualizes key trends in **Power BI**.  
-It demonstrates a full **ETL pipeline** and provides insights into video popularity, channel performance, and user engagement metrics.
-
----
-
-## Features
-- **ETL Pipeline:** Automates data collection from YouTube API.  
-- **Database Storage:** Stores cleaned data in MySQL for easy querying.  
-- **Interactive Dashboard:** Visualizes trending videos, likes, comments, views, and channel statistics.  
-- **Filters & Slicers:** Filter by channel or published date to explore specific trends.  
+## 🔍 Problem Statement
+YouTube generates massive amounts of data daily, but raw data alone does not provide actionable insights.
+This project focuses on extracting, transforming, and visualizing YouTube trending video data to analyze
+video performance, audience engagement, and channel popularity.
 
 ---
 
-## Technologies Used
-- **Python:** `extract.py`, `load.py` for API calls and data processing  
-- **MySQL:** Stores trending video data  
-- **Power BI:** Visualizes data in charts and dashboards  
-- **Libraries:** `pandas`, `mysql-connector-python`, `google-api-python-client`  
+## 📁 Dataset Source
+- YouTube Data API v3
+- Extracted fields:
+  - Video Title
+  - Channel Name
+  - Views
+  - Likes
+  - Comments
+  - Published Date
+  - Trending Date
 
 ---
 
-## Project Structure
-youtube_etl/
-│
-├── extract.py # Script to extract data from YouTube API
-├── load.py # Script to load data into MySQL
-├── youtube_trends.csv # Sample data file (optional)
-├── dashboard.pdf # Exported dashboard (viewable offline)
-├── README.md # Project overview (this file)
+## ⚙️ Steps Taken
 
-## How to Run
+### 1️⃣ Data Extraction
+- Used Python to fetch trending video data using the YouTube Data API
+- Stored extracted data into a CSV file
 
-1. **Clone the repository:**  
-`git clone https://github.com/yourusername/youtube-trending-dashboard.git`
+**Tools:** Python, YouTube Data API
 
-2. **Install dependencies:**  
-`pip install pandas mysql-connector-python google-api-python-client`
+---
 
-3. **Set up MySQL:**  
-- Create a database `youtube_trends` and table `trending_videos` as shown in the scripts.  
-- Update MySQL credentials in `load.py`.
+### 2️⃣ Data Loading
+- Cleaned and structured the dataset
+- Loaded processed data into a MySQL database
 
-4. **Run the ETL scripts:**  
-`python extract.py`   # Extract data from YouTube API  
-`python load.py`      # Load data into MySQL
+**Tools:** Python, MySQL
 
-5. **Open Power BI Dashboard:**  
-- Connect to MySQL database to refresh visuals.  
-- Explore charts and use slicers for filtering.
+---
 
+### 3️⃣ Exploratory Data Analysis (EDA)
+- Checked data quality and missing values
+- Analyzed:
+  - Top trending videos by views
+  - Engagement metrics (likes and comments)
+  - Channel-wise performance
+
+---
+
+### 4️⃣ Data Visualization (Power BI)
+Created an interactive Power BI dashboard including:
+- Clustered bar chart showing Views, Likes, and Comments by Video Title
+- Line chart showing Views trend over time
+- Pie chart showing Total Views by Channel
+- Slicers for Channel and Published Date
+
+**Tools:** Power BI Desktop
+
+---
+
+
+## 🛠️ Technologies Used
+- Python
+- MySQL
+- Power BI
+- Git & GitHub
+
+---
+
+## 🎯 Key Learnings
+- Built an end-to-end ETL pipeline
+- Worked with APIs and databases
+- Designed professional Power BI dashboards
+- Improved data analysis and visualization skills
+
+---
+
+## ▶️ How to Run the Project
+1. Clone the repository
+2. Run `extract.py` to fetch YouTube data
+3. Run `load.py` to load data into MySQL
+4. Open the Power BI file and refresh the data
+
+## 📸 Final Dashboard Screenshots
 
 
 <img width="1839" height="963" alt="youtue dashboard preview " src="https://github.com/user-attachments/assets/260c78f8-0924-4649-813e-f604b3a1733c" />
